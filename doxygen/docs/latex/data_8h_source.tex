@@ -1,0 +1,40 @@
+\hypertarget{data_8h_source}{}\doxysection{data.\+h}
+\label{data_8h_source}\index{code/data.h@{code/data.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <array>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{errors_8h}{errors.h}}"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{classData}{Data}}}
+\DoxyCodeLine{15 \{}
+\DoxyCodeLine{16 \textcolor{keyword}{public}:}
+\DoxyCodeLine{23     \mbox{\hyperlink{classData_adf49d8ff2ffee44b9f362acae33591b2}{Data}}(}
+\DoxyCodeLine{24         \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&path\_to\_conf,}
+\DoxyCodeLine{25         \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&path\_to\_in,}
+\DoxyCodeLine{26         \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&path\_to\_out);}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{34     array<string, 2> \mbox{\hyperlink{classData_a0645809c37fe97241df0389cdb4e3adb}{conf}}();}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{41     vector<vector<uint64\_t>> \mbox{\hyperlink{classData_a1f64d99ae5f90732eb7c6dbcce54a05e}{read}}();}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{48     \textcolor{keywordtype}{void} \mbox{\hyperlink{classData_a0694bdb2c5825b8e039f8e8abfbff406}{write}}(\textcolor{keyword}{const} vector<uint64\_t> \&data);}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{54     \textcolor{keywordtype}{string} \mbox{\hyperlink{classData_a650bf0a09a0c8f95693b4a7287b712b2}{getPathToConf}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{60     \textcolor{keywordtype}{string} \mbox{\hyperlink{classData_a3b978922c19d36fe1180a9de48e74b9e}{getPathToIn}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{66     \textcolor{keywordtype}{string} \mbox{\hyperlink{classData_a65a124c574df8a65177c996cc9701b67}{getPathToOut}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68 \textcolor{keyword}{private}:}
+\DoxyCodeLine{69     \textcolor{keywordtype}{string} path\_to\_conf; }
+\DoxyCodeLine{70     \textcolor{keywordtype}{string} path\_to\_in;   }
+\DoxyCodeLine{71     \textcolor{keywordtype}{string} path\_to\_out;  }
+\DoxyCodeLine{72 \};}
+
+\end{DoxyCode}
