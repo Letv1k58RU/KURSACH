@@ -1,0 +1,159 @@
+\hypertarget{classData}{}\doxysection{Класс Data}
+\label{classData}\index{Data@{Data}}
+
+
+Класс для работы с данными, включая конфигурацию и ввод/вывод файлов.  
+
+
+
+
+{\ttfamily \#include $<$data.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classData_adf49d8ff2ffee44b9f362acae33591b2}{Data}} (const string \&path\+\_\+to\+\_\+conf, const string \&path\+\_\+to\+\_\+in, const string \&path\+\_\+to\+\_\+out)
+\begin{DoxyCompactList}\small\item\em Конструктор класса \mbox{\hyperlink{classData}{Data}}. \end{DoxyCompactList}\item 
+array$<$ string, 2 $>$ \mbox{\hyperlink{classData_a0645809c37fe97241df0389cdb4e3adb}{conf}} ()
+\begin{DoxyCompactList}\small\item\em Читает конфигурационные данные из файла. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ uint64\+\_\+t $>$ $>$ \mbox{\hyperlink{classData_a1f64d99ae5f90732eb7c6dbcce54a05e}{read}} ()
+\begin{DoxyCompactList}\small\item\em Читает данные из входного файла. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classData_a0694bdb2c5825b8e039f8e8abfbff406}{write}} (const vector$<$ uint64\+\_\+t $>$ \&data)
+\begin{DoxyCompactList}\small\item\em Записывает числовые данные в выходной файл. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classData_a650bf0a09a0c8f95693b4a7287b712b2}{get\+Path\+To\+Conf}} () const
+\begin{DoxyCompactList}\small\item\em Возвращает путь к файлу конфигурации. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classData_a3b978922c19d36fe1180a9de48e74b9e}{get\+Path\+To\+In}} () const
+\begin{DoxyCompactList}\small\item\em Возвращает путь к входному файлу. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classData_a65a124c574df8a65177c996cc9701b67}{get\+Path\+To\+Out}} () const
+\begin{DoxyCompactList}\small\item\em Возвращает путь к выходному файлу. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для работы с данными, включая конфигурацию и ввод/вывод файлов. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classData_adf49d8ff2ffee44b9f362acae33591b2}\label{classData_adf49d8ff2ffee44b9f362acae33591b2}} 
+\index{Data@{Data}!Data@{Data}}
+\index{Data@{Data}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{Data()}{Data()}}
+{\footnotesize\ttfamily Data\+::\+Data (\begin{DoxyParamCaption}\item[{const string \&}]{path\+\_\+to\+\_\+conf,  }\item[{const string \&}]{path\+\_\+to\+\_\+in,  }\item[{const string \&}]{path\+\_\+to\+\_\+out }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса \mbox{\hyperlink{classData}{Data}}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em path\+\_\+to\+\_\+conf} & Путь к файлу конфигурации. \\
+\hline
+{\em path\+\_\+to\+\_\+in} & Путь к входному файлу. \\
+\hline
+{\em path\+\_\+to\+\_\+out} & Путь к выходному файлу. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classData_a0645809c37fe97241df0389cdb4e3adb}\label{classData_a0645809c37fe97241df0389cdb4e3adb}} 
+\index{Data@{Data}!conf@{conf}}
+\index{conf@{conf}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{conf()}{conf()}}
+{\footnotesize\ttfamily array$<$ string, 2 $>$ Data\+::conf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Читает конфигурационные данные из файла. 
+
+\begin{DoxyReturn}{Возвращает}
+Массив строк, содержащий логин и пароль. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classInputOutputError}{Input\+Output\+Error}}} & В случае ошибки открытия файла. \\
+\hline
+{\em \mbox{\hyperlink{classDataDecodeError}{Data\+Decode\+Error}}} & В случае отсутствия логина или пароля. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classData_a650bf0a09a0c8f95693b4a7287b712b2}\label{classData_a650bf0a09a0c8f95693b4a7287b712b2}} 
+\index{Data@{Data}!getPathToConf@{getPathToConf}}
+\index{getPathToConf@{getPathToConf}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getPathToConf()}{getPathToConf()}}
+{\footnotesize\ttfamily string Data\+::get\+Path\+To\+Conf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Возвращает путь к файлу конфигурации. 
+
+\begin{DoxyReturn}{Возвращает}
+Путь к файлу конфигурации. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classData_a3b978922c19d36fe1180a9de48e74b9e}\label{classData_a3b978922c19d36fe1180a9de48e74b9e}} 
+\index{Data@{Data}!getPathToIn@{getPathToIn}}
+\index{getPathToIn@{getPathToIn}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getPathToIn()}{getPathToIn()}}
+{\footnotesize\ttfamily string Data\+::get\+Path\+To\+In (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Возвращает путь к входному файлу. 
+
+\begin{DoxyReturn}{Возвращает}
+Путь к входному файлу. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classData_a65a124c574df8a65177c996cc9701b67}\label{classData_a65a124c574df8a65177c996cc9701b67}} 
+\index{Data@{Data}!getPathToOut@{getPathToOut}}
+\index{getPathToOut@{getPathToOut}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getPathToOut()}{getPathToOut()}}
+{\footnotesize\ttfamily string Data\+::get\+Path\+To\+Out (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Возвращает путь к выходному файлу. 
+
+\begin{DoxyReturn}{Возвращает}
+Путь к выходному файлу. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classData_a1f64d99ae5f90732eb7c6dbcce54a05e}\label{classData_a1f64d99ae5f90732eb7c6dbcce54a05e}} 
+\index{Data@{Data}!read@{read}}
+\index{read@{read}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily vector$<$ vector$<$ uint64\+\_\+t $>$ $>$ Data\+::read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Читает данные из входного файла. 
+
+\begin{DoxyReturn}{Возвращает}
+Вектор векторов целых чисел. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classInputOutputError}{Input\+Output\+Error}}} & В случае ошибки открытия файла. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classData_a0694bdb2c5825b8e039f8e8abfbff406}\label{classData_a0694bdb2c5825b8e039f8e8abfbff406}} 
+\index{Data@{Data}!write@{write}}
+\index{write@{write}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void Data\+::write (\begin{DoxyParamCaption}\item[{const vector$<$ uint64\+\_\+t $>$ \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Записывает числовые данные в выходной файл. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em data} & Вектор целых чисел для записи. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classInputOutputError}{Input\+Output\+Error}}} & В случае ошибки открытия файла. \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+code/data.\+h\item 
+code/data.\+cpp\end{DoxyCompactItemize}
