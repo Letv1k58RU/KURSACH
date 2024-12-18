@@ -1,0 +1,54 @@
+\hypertarget{errors_8h_source}{}\doxysection{errors.\+h}
+\label{errors_8h_source}\index{code/errors.h@{code/errors.h}}
+\mbox{\hyperlink{errors_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <exception>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{18 \textcolor{keyword}{class }\mbox{\hyperlink{classBasicClientError}{BasicClientError}} : \textcolor{keyword}{public} std::exception}
+\DoxyCodeLine{19 \{}
+\DoxyCodeLine{20 \textcolor{keyword}{public}:}
+\DoxyCodeLine{21     \mbox{\hyperlink{classBasicClientError}{BasicClientError}}(\textcolor{keyword}{const} std::string \&\mbox{\hyperlink{classBasicClientError_acc29c719d50521b4f4e8c74440d7a7a5}{name}}, \textcolor{keyword}{const} std::string \&\mbox{\hyperlink{classBasicClientError_a39a98056f6c2d5a2f2dd7b4382015096}{message}}, \textcolor{keyword}{const} std::string \&\mbox{\hyperlink{classBasicClientError_ad4f33db4d1784945c37c4d3b93b3f6cd}{func}});}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23     \textcolor{keyword}{const} \textcolor{keywordtype}{char} *what() \textcolor{keyword}{const} \textcolor{keyword}{noexcept} \textcolor{keyword}{override};}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{26     std::string \mbox{\hyperlink{classBasicClientError_acc29c719d50521b4f4e8c74440d7a7a5}{name}};            }
+\DoxyCodeLine{27     std::string \mbox{\hyperlink{classBasicClientError_ad4f33db4d1784945c37c4d3b93b3f6cd}{func}};            }
+\DoxyCodeLine{28     \textcolor{keyword}{mutable} std::string \mbox{\hyperlink{classBasicClientError_a39a98056f6c2d5a2f2dd7b4382015096}{message}}; }
+\DoxyCodeLine{29 \};}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \textcolor{keyword}{class }\mbox{\hyperlink{classInputOutputError}{InputOutputError}} : \textcolor{keyword}{public} \mbox{\hyperlink{classBasicClientError}{BasicClientError}}}
+\DoxyCodeLine{32 \{}
+\DoxyCodeLine{33 \textcolor{keyword}{public}:}
+\DoxyCodeLine{34     \mbox{\hyperlink{classInputOutputError}{InputOutputError}}(\textcolor{keyword}{const} std::string \&\mbox{\hyperlink{classBasicClientError_a39a98056f6c2d5a2f2dd7b4382015096}{message}}, \textcolor{keyword}{const} std::string \&\mbox{\hyperlink{classBasicClientError_ad4f33db4d1784945c37c4d3b93b3f6cd}{func}});}
+\DoxyCodeLine{35 \};}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 \textcolor{keyword}{class }\mbox{\hyperlink{classArgsDecodeError}{ArgsDecodeError}} : \textcolor{keyword}{public} \mbox{\hyperlink{classBasicClientError}{BasicClientError}}}
+\DoxyCodeLine{38 \{}
+\DoxyCodeLine{39 \textcolor{keyword}{public}:}
+\DoxyCodeLine{40     \mbox{\hyperlink{classArgsDecodeError}{ArgsDecodeError}}(\textcolor{keyword}{const} std::string \&\mbox{\hyperlink{classBasicClientError_a39a98056f6c2d5a2f2dd7b4382015096}{message}}, \textcolor{keyword}{const} std::string \&\mbox{\hyperlink{classBasicClientError_ad4f33db4d1784945c37c4d3b93b3f6cd}{func}});}
+\DoxyCodeLine{41 \};}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43 \textcolor{keyword}{class }\mbox{\hyperlink{classDataDecodeError}{DataDecodeError}} : \textcolor{keyword}{public} \mbox{\hyperlink{classBasicClientError}{BasicClientError}}}
+\DoxyCodeLine{44 \{}
+\DoxyCodeLine{45 \textcolor{keyword}{public}:}
+\DoxyCodeLine{46     \mbox{\hyperlink{classDataDecodeError}{DataDecodeError}}(\textcolor{keyword}{const} std::string \&\mbox{\hyperlink{classBasicClientError_a39a98056f6c2d5a2f2dd7b4382015096}{message}}, \textcolor{keyword}{const} std::string \&\mbox{\hyperlink{classBasicClientError_ad4f33db4d1784945c37c4d3b93b3f6cd}{func}});}
+\DoxyCodeLine{47 \};}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49 \textcolor{keyword}{class }\mbox{\hyperlink{classAuthError}{AuthError}} : \textcolor{keyword}{public} \mbox{\hyperlink{classBasicClientError}{BasicClientError}}}
+\DoxyCodeLine{50 \{}
+\DoxyCodeLine{51 \textcolor{keyword}{public}:}
+\DoxyCodeLine{52     \mbox{\hyperlink{classAuthError}{AuthError}}(\textcolor{keyword}{const} std::string \&\mbox{\hyperlink{classBasicClientError_a39a98056f6c2d5a2f2dd7b4382015096}{message}}, \textcolor{keyword}{const} std::string \&\mbox{\hyperlink{classBasicClientError_ad4f33db4d1784945c37c4d3b93b3f6cd}{func}});}
+\DoxyCodeLine{53 \};}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55 \textcolor{keyword}{class }\mbox{\hyperlink{classNetworkError}{NetworkError}} : \textcolor{keyword}{public} \mbox{\hyperlink{classBasicClientError}{BasicClientError}}}
+\DoxyCodeLine{56 \{}
+\DoxyCodeLine{57 \textcolor{keyword}{public}:}
+\DoxyCodeLine{58     \mbox{\hyperlink{classNetworkError}{NetworkError}}(\textcolor{keyword}{const} std::string \&\mbox{\hyperlink{classBasicClientError_a39a98056f6c2d5a2f2dd7b4382015096}{message}}, \textcolor{keyword}{const} std::string \&\mbox{\hyperlink{classBasicClientError_ad4f33db4d1784945c37c4d3b93b3f6cd}{func}});}
+\DoxyCodeLine{59 \};}
+
+\end{DoxyCode}

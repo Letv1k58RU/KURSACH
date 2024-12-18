@@ -1,0 +1,32 @@
+\hypertarget{client_8h_source}{}\doxysection{client.\+h}
+\label{client_8h_source}\index{code/client.h@{code/client.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <cstdint>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{13 \textcolor{keyword}{class }\mbox{\hyperlink{classClient}{Client}}}
+\DoxyCodeLine{14 \{}
+\DoxyCodeLine{15 \textcolor{keyword}{public}:}
+\DoxyCodeLine{21     \mbox{\hyperlink{classClient_a66adc90d431a7a33a8ab3151d1075c6d}{Client}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string} \&address, uint16\_t port);}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{27     \textcolor{keywordtype}{void} \mbox{\hyperlink{classClient_a9865ca34bb3892bf267a8e8e4a24781d}{conn}}();}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{35     \textcolor{keywordtype}{void} \mbox{\hyperlink{classClient_ad715ab1466b33f6f2d50bf8a58f3abe4}{auth}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string} \&username, \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&password);}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{43     vector<uint64\_t> \mbox{\hyperlink{classClient_a5528f88c8ec41a5591c9c72b346f2ad1}{calc}}(\textcolor{keyword}{const} vector<vector<uint64\_t>> \&data);}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{48     \textcolor{keywordtype}{void} \mbox{\hyperlink{classClient_a2ac4838875e743af25125d8b5c8eba09}{close}}();}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50 \textcolor{keyword}{private}:}
+\DoxyCodeLine{51     \textcolor{keywordtype}{int} socket;     }
+\DoxyCodeLine{52     \textcolor{keywordtype}{string} address; }
+\DoxyCodeLine{53     uint16\_t port;  }
+\DoxyCodeLine{54 \};}
+
+\end{DoxyCode}
