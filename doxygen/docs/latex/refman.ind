@@ -1,0 +1,94 @@
+\begin{theindex}
+
+  \item {ArgsDecodeError}, \hyperpage{7}
+  \item {auth}
+    \subitem {Client}, \hyperpage{10}
+  \item {AuthError}, \hyperpage{7}
+
+  \indexspace
+
+  \item {BasicClientError}, \hyperpage{7}
+
+  \indexspace
+
+  \item {calc}
+    \subitem {Client}, \hyperpage{10}
+  \item {Client}, \hyperpage{8}
+    \subitem {auth}, \hyperpage{10}
+    \subitem {calc}, \hyperpage{10}
+    \subitem {Client}, \hyperpage{9}
+    \subitem {conn}, \hyperpage{11}
+  \item {code/client.h}, \hyperpage{19}
+  \item {code/data.h}, \hyperpage{19}
+  \item {code/errors.h}, \hyperpage{20, 21}
+  \item {code/terminal.h}, \hyperpage{21}
+  \item {conf}
+    \subitem {Data}, \hyperpage{12}
+  \item {conn}
+    \subitem {Client}, \hyperpage{11}
+
+  \indexspace
+
+  \item {Data}, \hyperpage{11}
+    \subitem {conf}, \hyperpage{12}
+    \subitem {Data}, \hyperpage{12}
+    \subitem {getPathToConf}, \hyperpage{12}
+    \subitem {getPathToIn}, \hyperpage{13}
+    \subitem {getPathToOut}, \hyperpage{13}
+    \subitem {read}, \hyperpage{13}
+    \subitem {write}, \hyperpage{13}
+  \item {DataDecodeError}, \hyperpage{14}
+
+  \indexspace
+
+  \item {getAddress}
+    \subitem {Terminal}, \hyperpage{16}
+  \item {getConfigPath}
+    \subitem {Terminal}, \hyperpage{16}
+  \item {getInputPath}
+    \subitem {Terminal}, \hyperpage{16}
+  \item {getOutputPath}
+    \subitem {Terminal}, \hyperpage{16}
+  \item {getPathToConf}
+    \subitem {Data}, \hyperpage{12}
+  \item {getPathToIn}
+    \subitem {Data}, \hyperpage{13}
+  \item {getPathToOut}
+    \subitem {Data}, \hyperpage{13}
+  \item {getPort}
+    \subitem {Terminal}, \hyperpage{17}
+
+  \indexspace
+
+  \item {InputOutputError}, \hyperpage{14}
+
+  \indexspace
+
+  \item {NetworkError}, \hyperpage{15}
+
+  \indexspace
+
+  \item {parseArgs}
+    \subitem {Terminal}, \hyperpage{17}
+
+  \indexspace
+
+  \item {read}
+    \subitem {Data}, \hyperpage{13}
+
+  \indexspace
+
+  \item {Terminal}, \hyperpage{15}
+    \subitem {getAddress}, \hyperpage{16}
+    \subitem {getConfigPath}, \hyperpage{16}
+    \subitem {getInputPath}, \hyperpage{16}
+    \subitem {getOutputPath}, \hyperpage{16}
+    \subitem {getPort}, \hyperpage{17}
+    \subitem {parseArgs}, \hyperpage{17}
+
+  \indexspace
+
+  \item {write}
+    \subitem {Data}, \hyperpage{13}
+
+\end{theindex}

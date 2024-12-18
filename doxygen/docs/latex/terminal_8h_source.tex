@@ -1,0 +1,41 @@
+\hypertarget{terminal_8h_source}{}\doxysection{terminal.\+h}
+\label{terminal_8h_source}\index{code/terminal.h@{code/terminal.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{errors_8h}{errors.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{13 \textcolor{keyword}{class }\mbox{\hyperlink{classTerminal}{Terminal}}}
+\DoxyCodeLine{14 \{}
+\DoxyCodeLine{15 \textcolor{keyword}{public}:}
+\DoxyCodeLine{19     \mbox{\hyperlink{classTerminal_aa448509b5aa1ece53c3d86385655be0e}{Terminal}}();}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{25     \textcolor{keywordtype}{string} \mbox{\hyperlink{classTerminal_a57b2d03c756d3ef2a13d462e0bf1ba3c}{getAddress}}();}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{31     \textcolor{keywordtype}{int} \mbox{\hyperlink{classTerminal_afe22ef3df21ca261527b0bba08991d01}{getPort}}();}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{37     \textcolor{keywordtype}{string} \mbox{\hyperlink{classTerminal_a1d1c4cc4e01824a2a4f4dfb30a5a398f}{getInputPath}}();}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{43     \textcolor{keywordtype}{string} \mbox{\hyperlink{classTerminal_a881b307fa75b978c77f91eb6c5e6650d}{getOutputPath}}();}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{49     \textcolor{keywordtype}{string} \mbox{\hyperlink{classTerminal_a14dc1331d93ce77b3aa75d1c62f1d1b3}{getConfigPath}}();}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{57     \textcolor{keywordtype}{void} \mbox{\hyperlink{classTerminal_a6f46c94310b945480e12b835969fa15d}{parseArgs}}(\textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char} *argv[]);}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{62     \textcolor{keywordtype}{void} \mbox{\hyperlink{classTerminal_a4fd718a80dbddd79c8cec2c15d4c8e3a}{showHelp}}();}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64 \textcolor{keyword}{private}:}
+\DoxyCodeLine{65     \textcolor{keywordtype}{string} address;     }
+\DoxyCodeLine{66     uint16\_t port;      }
+\DoxyCodeLine{67     \textcolor{keywordtype}{string} input\_path;  }
+\DoxyCodeLine{68     \textcolor{keywordtype}{string} output\_path; }
+\DoxyCodeLine{69     \textcolor{keywordtype}{string} config\_path; }
+\DoxyCodeLine{70     \textcolor{keywordtype}{bool} help\_flag;     }
+\DoxyCodeLine{71 \};}
+
+\end{DoxyCode}
